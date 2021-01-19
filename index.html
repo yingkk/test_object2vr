@@ -1,0 +1,741 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>青海</title>
+  <link rel="stylesheet" href="./sheet/common.min.css">
+  <link rel="stylesheet" href="./sheet/threesixty.css">
+  <script src="./data/data.js" type="text/javascript"></script>
+  <script src="./js/jquery-1.11.0.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="./js/object2vr_player.min.js"></script>
+  <script type="text/javascript" src='./js/threesixty.min.js'></script>
+</head>
+
+<body οncοntextmenu="return false">
+  <div class="mask"></div>
+  <div class="container" id="container"></div>
+  <div class="light">
+    <img src="./images/light.png" class="kc"/>
+  </div>
+  <div class="threesixty product1 wz">
+    <div class="spinner">
+      <span>0%</span>
+    </div>
+    <ol class="threesixty_images"></ol>
+  </div>
+  <div class="ring">
+    <div class="ring-title">
+      岩性标本环
+    </div>
+    <div class="ring-subtitle">
+      Lithologic specimen ring
+    </div>
+    <div class="ring-desc">
+      青海地质时代岩性标本环是博物馆展陈的亮点之一，实现了在国内首次以地质年代为线索，系统的采集本省典型岩石标本制作岩性标本环。
+    </div>
+  </div>
+  <div class="rotate">
+    <img src="./images/rotate.png">
+  </div>
+  <div class="detail">
+    <div class="detail-title">
+    </div>
+    <div class="detail-subtitle">
+    </div>
+    <div class="detail-img">
+      <img src="">
+    </div>
+    <div class="detail-des">
+    </div>
+  </div>
+  <div class="tip">
+    <img src="./images/tip.png">
+  </div>
+  <div class="panel-wrap">
+    <div class="panel">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+  <div class="btm">
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>黄土</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/1.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>复成分砾岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/2.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>含油砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/3.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>泥岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/4.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>膏岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/5.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>复成分砾岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/6.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/7.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>复成分砾岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/8.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>煤岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/9.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/10.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>流纹岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/11.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>长石石英砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/12.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>长石石英砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/13.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>生物碎屑灰岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/14.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>煤岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/15.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>灰岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/16.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>砾岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/17.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>火山集块岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/18.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>长石石英砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/19.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/20.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>安山岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/21.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>杏仁状玄武岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/22.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>灰岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/23.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>安山岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/24.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>长石石英砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/25.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>冰碛砾岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/26.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>石英砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/27.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>变砂岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/28.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>绢云石英片岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/29.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>灰岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/30.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>白云岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/31.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>黑云石英片岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/32.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>条带状灰岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/33.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>千枚岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/34.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>石英岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/35.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>黑云斜长片麻岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/36.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>石英片岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/37.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>斜长角闪岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/38.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>大理岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/39.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>麻粒岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/40.jpg" alt="">
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="specimen-item">
+            <span class="specimen-item-title">
+              <span>花岗闪长片麻岩</span>
+            </span>
+            <div class="specimen-item-img">
+              <img src="./images/btm/41.jpg" alt="">
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr class="tab-tr">
+        <td colspan="2">第四纪</td>
+        <td colspan="2">新近纪</td>
+        <td colspan="2">古近纪</td>
+        <td colspan="2">白垩纪</td>
+        <td colspan="2">侏罗纪</td>
+        <td colspan="2">三叠纪</td>
+        <td colspan="2">二叠纪</td>
+        <td colspan="2">石炭纪</td>
+        <td colspan="2">泥盆纪</td>
+        <td colspan="2">志留纪</td>
+        <td colspan="2">奥陶纪</td>
+        <td colspan="3">寒武纪</td>
+        <td colspan="2">南华-震旦纪</td>
+        <td colspan="2">青白口纪</td>
+        <td colspan="2">蓟县纪</td>
+        <td colspan="4">长城纪</td>
+        <td colspan="4" rowspan="2">古元古代</td>
+        <td colspan="2" rowspan="2" class="reset">太古代</td>
+      </tr>
+      <tr class="tab-tr">
+        <td colspan="6">新生代</td>
+        <td colspan="6">中生代</td>
+        <td colspan="13">古生代</td>
+        <td colspan="4">新元古代</td>
+        <td colspan="6">中元古代</td>
+      </tr>
+    </table>
+  </div>
+</body>
+<script type="text/javascript">
+  $(function () {
+    //default init
+    updateXML(0);
+
+    showLightAndStone("none");
+    showDetail("none");
+    $('.spinner').css("display", "none");
+
+    //canvas init
+    initCanvas();
+
+    $("tr").eq(0).find("td").click(function (e) {
+      if (!canDraw) {
+        return false;
+      }
+      clearCanvas();
+      canDraw = false;
+      $(".mask").show();
+      $("tr").eq(0).find("td").addClass("disabled");
+      $(".panel").addClass("disabled");
+      showLightAndStone("block");
+      var index = $(this).index();
+      onImgIndexChange(index, "selected")
+    });
+
+    $("tr").eq(0).find("td").hover(function (e) {
+      var index = $(this).index();
+      onImgIndexChange(index, "hover");
+    }, function (e) {
+      $("td").removeClass("hover");
+    });
+  })
+
+  function showLightAndStone(val) {
+    $(".light").css("display", val);
+    $(".threesixty_images").css("display", val);
+  }
+
+  function showDetail(val) {
+    if (val === 'block') {
+      $(".detail").fadeIn(3000)
+    } else {
+      $(".detail").fadeOut(3000)
+    }
+  }
+
+  var canDraw = true;
+  var randomIndex;
+
+  function onImgIndexChange(_index, styleName) {
+    $("td").removeClass(styleName);
+    if ("selected" === styleName) {
+      showDetail("none");
+      showLightAndStone("none");
+      //转盘
+      //obj.changePan(360)
+      updateXML(detailData[_index].stopIndex);
+      setTimeout(function () {
+        //3D,
+        change3DImg(detailData[_index].XMLConfig, detailData[_index]);
+      }, 5000)
+    }
+    addCellClass(_index, styleName);
+  }
+
+  function setData(data) {
+    $(".detail-title").text(data.title);
+    $(".detail-subtitle").text(data.enTitle);
+    $(".detail-img img").attr("src", data.img);
+    $(".detail-des").text(data.des);
+  };
+
+  function addCellClass(_index, styleName) {
+    $("tr").eq(0).find("td").eq(_index).addClass(styleName);
+    var pTd = $("tr").eq(1).find("td");
+    var ppTd = $("tr").eq(2).find("td");
+    var cellspace = 0;
+    for (var i = 0; i < pTd.length; i++) {
+      const cIndex = $(pTd[i]).attr("colspan");
+      cellspace = +cIndex + cellspace;
+      if (cellspace >= _index + 1) {
+        $(pTd[i]).addClass(styleName);
+        break;
+      }
+    }
+    var pCellspace = 0;
+    for (var i = 0; i < ppTd.length; i++) {
+      const cIndex = $(ppTd[i]).attr("colspan");
+      pCellspace = +cIndex + pCellspace;
+      if (pCellspace >= _index + 1) {
+        $(ppTd[i]).addClass(styleName);
+        break;
+      }
+    }
+  }
+
+  function updateXML(index) {
+    var xmlTemplate = '<?xml version="1.0" encoding="UTF-8"?>';
+    xmlTemplate += '<vrobject>';
+    xmlTemplate += '<input states="1" windowheight="1080" width="1920" imagepath="images/turntable" preview="4" windowwidth="1920" height="1080" preload="1" columns="76" rows="1" fileextension="jpg"/>';
+    xmlTemplate += '<control simulatemass="1" lockedmouse="0" swapxy="0" lockedkeyboard="0" dblclickfullscreen="0" revx="0" invertwheel="0" revy="0" wrapx="1" wrapy="0" trapwheel="1" automovemode="1" lockedwheel="1" speedwheel="1.000" controller="1" sensitivity="10"/>'
+    xmlTemplate += '<view>';
+    xmlTemplate += '<start row="0" column="' + index + '" state="0"/>';
+    xmlTemplate += '<zoom default="1" min="1" max="1"/>';
+    xmlTemplate += '<viewer imagescaling="1" backgroundcolor="0x000000" background="1"/>'
+    xmlTemplate += '</view>';
+    xmlTemplate += '<autorotate speed="1.000" onlyonce="3" delay="5.00" start="0"/>';
+    // xmlTemplate += '<userdata title="" datetime="" description="" copyright="" author="" source="" comment="" info=""/>';
+    // xmlTemplate += '<qthotspots enabled="0" reuse="8">';
+    // xmlTemplate += '<label width="180" backgroundalpha="1.000" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1.000" borderradius="1" wordwrap="1" textalpha="1.000"/>'
+    // xmlTemplate += '</qthotspots>';
+    // xmlTemplate += '<hotspots>';
+    // xmlTemplate += '<label width="180" backgroundalpha="1.000" enabled="1" height="20" backgroundcolor="0xffffff" bordercolor="0x000000" border="1" textcolor="0x000000" background="1" borderalpha="1.000" borderradius="1" wordwrap="1" textalpha="1.000"/>'
+    // xmlTemplate += '<polystyle mode="0" backgroundalpha="0.251" backgroundcolor="0x0000ff" bordercolor="0x0000ff" borderalpha="1.000"/>'
+    // xmlTemplate += '</hotspots>';
+    xmlTemplate += '</vrobject>';
+    $('.container').empty();
+    obj = new object2vrPlayer("container");
+    obj.readConfigString(xmlTemplate);
+  }
+
+  function change3DImg(config, data) {
+    $('.spinner').css('display', "block");
+    //clear
+    $('.threesixty_images').empty();
+    car = $('.product1').ThreeSixty({
+      totalFrames: 76,
+      endFrame: 76,
+      currentFrame: 1,
+      imgList: '.threesixty_images',
+      progress: '.spinner',
+      imagePath: config.path,
+      filePrefix: config.filePrefix,
+      ext: '.png',
+      height: '22.2222%',
+      width: '20.8333%',
+      navigation: false,
+      disableSpin: true,
+      drag: false,
+      framerate: 60,
+      onReady: function () {
+        car.play();
+        showLightAndStone("block");
+        setData(data);
+        setTimeout(function () {
+          showDetail("block");
+          canDraw = true;
+          $(".mask").hide();
+          $("tr").eq(0).find("td").removeClass("disabled");
+          $(".panel").removeClass("disabled");
+        }, 800)
+      }
+    });
+  }
+
+  function getLocation(x, y) {
+    var canvas = document.getElementById("canvas");;
+    var bbox = canvas.getBoundingClientRect();
+    return {
+      x: (x - bbox.left) * (canvas.width / bbox.width),
+      y: (y - bbox.top) * (canvas.height / bbox.height)
+    };
+  }
+
+  function initCanvas() {
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var width = canvas.offsetWidth;
+    var height = canvas.offsetHeight;
+    canvas.width = width;
+    canvas.height = height;
+    canvas.onmousedown = function (e) {
+      if (!canDraw) {
+        return;
+      }
+      var _startTime = new Date().getTime();
+      clearCanvas();
+      var e = e || event;
+      var location = getLocation(e.clientX, e.clientY)
+      var x = location.x;
+      var y = location.y;
+      ctx.beginPath();
+      ctx.moveTo(x, y);
+      document.onmousemove = function (e) {
+        if (!canDraw) {
+          return;
+        }
+        var _location = getLocation(e.clientX, e.clientY)
+        var x2 = _location.x;
+        var y2 = _location.y;
+        ctx.lineTo(x2, y2);
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = "#00f4ff";
+        ctx.stroke();
+        ctx.restore();
+      }
+
+      document.onmouseup = function (e) {
+        if (!canDraw) {
+          return;
+        }
+        canDraw = false;
+        $(".mask").show();
+        $("tr").eq(0).find("td").addClass("disabled");
+        $(".panel").addClass("disabled")
+        document.onmousemove = null;
+        document.onmouseup = null;
+
+        var _endTime = new Date().getTime();
+        var time_diff = _endTime - _startTime;
+
+        if (time_diff < 200) {
+          canDraw = true;
+          $(".mask").hide();
+          $("tr").eq(0).find("td").removeClass("disabled");
+          $(".panel").removeClass("disabled")
+          return;
+        }
+        randomIndex = getRandom();
+        onImgIndexChange(randomIndex, "selected");
+      }
+    }
+  }
+
+  function clearCanvas() {
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+  }
+
+  function getRandom() {
+    return Math.floor(Math.random() * 40);
+  }
+</script>
+
+</html>
